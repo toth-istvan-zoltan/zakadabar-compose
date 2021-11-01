@@ -1,0 +1,22 @@
+serverName: @applicationTitle@
+defaultLocale: en
+
+database:
+  driverClassName: org.postgresql.Driver
+  jdbcUrl: jdbc:postgresql://db/@dockerSqlDatabase@
+  username: @dockerSqlUser@
+  password: @dockerSqlPassword@
+
+traceRouting: false
+staticResources: /local/@projectName@/var/static
+
+modules:
+  - @packageName@.backend.Module
+
+#ktor:
+#  port: 8080
+#  websocket:
+#    pingPeriod: 60
+#    timeout: 15
+#    maxFrameSize: 1000000
+#    masking: false

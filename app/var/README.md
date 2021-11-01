@@ -1,0 +1,1 @@
+If you use H2 during development, the database will be in this directory.

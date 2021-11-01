@@ -1,0 +1,23 @@
+serverName: Zakadabar Demo
+defaultLocale: en
+
+database:
+  driverClassName: @sqlDriver@
+  jdbcUrl: @sqlUrl@
+  username: @sqlUser@
+  password: @sqlPassword@
+  debugSql: false
+
+traceRouting: false
+staticResources: ./var/static
+
+modules:
+  - @packageName@.backend.Module
+
+#ktor:
+#  port: 8080
+#  websocket:
+#    pingPeriod: 60
+#    timeout: 15
+#    maxFrameSize: 1000000
+#    masking: false
